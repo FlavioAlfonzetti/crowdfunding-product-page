@@ -45,9 +45,7 @@ $(window).on('resize', function () {
   let windowWidth = $(window).width();
 
   if (windowWidth > 900) {
-    // Disable or hide the overlay here
     hamburgerBtn.hide();
-    /* overlay.hide(); */
     menu.show();
     closeBtn.hide();
   } else {
@@ -64,9 +62,9 @@ class BPSection {
     this.btnClose = this.backProject.find('.close');
     this.btnContinue = this.backProject.find('.continue-btn');
 
+    choiceRadio.on('click', this.checkBoxes.bind(this));
     this.btnSupport.on('click', this.handleSupportButtonClick.bind(this));
     this.btnClose.on('click', this.handleCloseButtonClick.bind(this));
-    choiceRadio.on('click', this.checkBoxes.bind(this));
     this.btnContinue.on('click', this.handleContinueButtonClick.bind(this));
 
     this.checkNumber();

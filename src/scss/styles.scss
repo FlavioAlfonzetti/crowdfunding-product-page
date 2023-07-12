@@ -30,6 +30,7 @@ body {
     }
   }
 
+  /* NAVBAR */
   nav {
     background-image: url('../../images/image-hero-mobile.jpg');
     background-repeat: no-repeat;
@@ -65,7 +66,6 @@ body {
         right: 0;
         background-color: $neutral_white;
         margin: 4.8rem 1.6rem;
-        /* margin: 2.5rem 0.2rem; */
         border-radius: 0.5rem;
         z-index: 4;
         animation: menu 0.4s;
@@ -74,10 +74,10 @@ body {
           list-style: none;
 
           li {
+            cursor: pointer;
             border-bottom: 1px solid $neutral_lighter-gray;
             padding: 1.5rem 1.5rem;
             font-weight: $fw-medium;
-            cursor: pointer;
           }
         }
       }
@@ -93,7 +93,7 @@ body {
     }
   }
 
-  /* MAIN SECTION */
+  /* MAIN */
   main {
     position: relative;
     display: flex;
@@ -134,8 +134,8 @@ body {
       margin-top: 0.5rem;
 
       .btn-support {
-        border: none;
         background-color: $primary_moderate-cyan;
+        border: none;
         color: $neutral_white;
         padding: 0 3rem;
         border-radius: 2rem;
@@ -305,7 +305,7 @@ body {
     }
   }
 
-  /* BACK PROJECT SECTION */
+  /* BACK PROJECT SECTION  */
   .back-project-section {
     visibility: hidden;
     flex-direction: column;
@@ -466,7 +466,6 @@ body {
           .euro {
             position: absolute;
             left: 10%;
-            /* left: 1.5rem; */
             top: 0.67rem;
             color: $neutral_light-gray;
           }

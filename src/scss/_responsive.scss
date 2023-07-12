@@ -42,17 +42,13 @@
       padding: 3rem;
     }
 
+    /* NAVBAR */
     nav {
       justify-content: space-between;
       background-image: url('../../images/image-hero-desktop.jpg');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      height: 40vh;
       padding: 2rem 0;
 
       .logo-menu {
-        display: flex;
         align-items: center;
         width: 77%;
         min-width: 56rem;
@@ -64,14 +60,11 @@
         }
 
         .menu {
-          /* left: unset;
-          right: unset; */
           display: inline;
           position: unset;
           width: unset;
           background-color: unset;
-          /* justify-content: space-between; */
-          margin: 0 0;
+          margin: 0;
           animation: unset;
 
           ul {
@@ -213,7 +206,6 @@
 
           .reward-btn {
             width: 25%;
-            padding: 1rem 0;
 
             &:hover {
               background-color: $primary_dark-cyan;
@@ -229,7 +221,7 @@
       }
     }
 
-    /* BACK PROJECT */
+    /* BACK PROJECT SECTION */
     .back-project-section {
       margin: 0 auto;
       left: 0;
@@ -238,6 +230,14 @@
       .cards {
         .card-bp {
           position: relative;
+
+          /* .choice {
+            .choice-txt {
+              h1:hover {
+                color: $primary_moderate-cyan;
+              }
+            }
+          } */
 
           p {
             padding-left: 2.5rem;
@@ -290,6 +290,7 @@
       }
     }
 
+    /* SUCCESS */
     .success-container {
       max-width: 28rem;
       left: 0;
